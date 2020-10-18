@@ -40,4 +40,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Accessor - Modifying the data while retrieving
+    **/
+//    public function getNameAttribute($name){
+//        return "Sevanian - ".ucfirst($name);
+//    }
+
+    /**
+     * Mutator (password) - updating the data while inserting into the database
+    **/
+//    public function setPasswordAttribute($pass){
+//        $this->attributes['password'] = bcrypt($pass);
+//    }
 }
